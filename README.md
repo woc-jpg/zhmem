@@ -39,6 +39,10 @@ zhmem stats                    # 知识库统计
 图片显示成缩略图需 `zhmem[gui]`（Pillow，只影响缩略图，不装也能用）。
 离线环境在交互模式输入 `/offline` 即可，不会发起任何网络请求。
 
+不想装 Python 环境的话，还有一个纯 Node 的版本：**[dsh-plugin-zhmem](https://github.com/woc-jpg/dsh-plugin-zhmem)**
+——下 zip、双击 `启动.bat` 就能用，一样的知识库、一样的打分逻辑（有 parity 测试逐位比对），
+只是换了个运行时。两边读写同一种数据库。
+
 它有两个层次，共用同一套打分内核：
 
 1. **个人记忆检索层**（`MemoryStore`）——给它一堆「某人说过的话」，问一句，
