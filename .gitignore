@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+*.db-shm
+*.db-wal
+tmp-*
+build/
+dist/
+*.egg-info/
+# pytest keeps its tmp dirs inside the repo root on Windows
+pytest-of-*/

@@ -1,0 +1,9 @@
+# 源文件统一 LF，Windows 上跑的两个脚本单独锁 CRLF。
+# 不锁的话，checkout 出来的 start.sh 会带 \r，在 Linux/macOS 上
+# 首行 shebang 变成 "/usr/bin/env bash\r" → bad interpreter。
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+*.whl binary

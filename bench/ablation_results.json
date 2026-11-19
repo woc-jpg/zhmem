@@ -1,0 +1,62 @@
+{
+  "default (coverage + fold both + isolated char + ctx max)": {
+    "R@1": 0.981,
+    "R@5": 1.0,
+    "MRR": 0.99,
+    "FPR": 0.125
+  },
+  "scorer=bm25": {
+    "R@1": 0.827,
+    "R@5": 0.981,
+    "MRR": 0.901,
+    "FPR": 0.75
+  },
+  "tokenizer=trigram": {
+    "R@1": 0.462,
+    "R@5": 0.462,
+    "MRR": 0.462,
+    "FPR": 0.0
+  },
+  "fold: query side only": {
+    "R@1": 0.827,
+    "R@5": 0.846,
+    "MRR": 0.837,
+    "FPR": 0.125
+  },
+  "fold: index side only": {
+    "R@1": 0.904,
+    "R@5": 0.923,
+    "MRR": 0.913,
+    "FPR": 0.125
+  },
+  "fold: neither side": {
+    "R@1": 0.827,
+    "R@5": 0.846,
+    "MRR": 0.837,
+    "FPR": 0.125
+  },
+  "all-char unigram weight": {
+    "R@1": 0.981,
+    "R@5": 1.0,
+    "MRR": 0.99,
+    "FPR": 0.75
+  },
+  "char_tier=off": {
+    "R@1": 0.981,
+    "R@5": 1.0,
+    "MRR": 0.99,
+    "FPR": 0.125
+  },
+  "no previous turn": {
+    "R@1": 0.885,
+    "R@5": 0.904,
+    "MRR": 0.889,
+    "FPR": 0.125
+  },
+  "concatenate previous turn": {
+    "R@1": 0.923,
+    "R@5": 1.0,
+    "MRR": 0.962,
+    "FPR": 0.125
+  }
+}
